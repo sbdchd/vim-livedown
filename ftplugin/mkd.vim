@@ -1,5 +1,5 @@
 augroup livedown
-  if g:livedown_autorun
+  if get(g:, 'livedown_autorun', 0)
     au! BufWinEnter <buffer> LivedownPreview
   endif
 
